@@ -3,8 +3,8 @@
 .page {
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
 
-  font-family: var(--font-family, sans-serif);
-  font-weight: var(--font-regular, --font-bold);
+  font-family: var(--font-family);
+  font-weight: var(--font-regular);
   color: var(--text-color);
   background-image: var(--bg-image);
   background-repeat: no-repeat;
@@ -39,22 +39,19 @@
 
 .title-decor {
   background-color: var(--accent-color);
-  font-weight: var(--font-bold);
-  color: var(--decorative-text-color);
 }
 
 .text-link {
   text-shadow: 2px 2px 0 var(--accent-color);
   text-decoration: none;
-  cursor: pointer;
 }
 
 a:hover {
-  text-decoration: underline;
+  border-bottom: 1px solid var(--text-color);
 }
 
 a:focus {
-  outline: 1px solid var(--text-color);
+  outline: none;
 }
 
 a:focus-visible {
@@ -73,7 +70,7 @@ a:focus-visible {
 }
 
 .header__rec {
-  font-family: var(--font-family, --font-bold);
+  font-family: var(--font-family, sans-serif);
   font-weight: var(--font-regular);
   color: var(--decorative-color);
   position: absolute;
@@ -108,8 +105,8 @@ a:focus-visible {
 }
 
 .header__theme-menu-button {
-  font-family: var(--font-family, --font-bold);
-  font-weight: var(--font-bold: bold;);
+  font-family: var(--font-family, sans-serif);
+  font-weight: var(--font-regular);
   color: var(--decorative-color);
   font-size: 18px;
   line-height: 100%;
@@ -163,10 +160,10 @@ a:focus-visible {
   color: var(--section-title-color);
   line-height: 130%;
   font-size: 18px;
-  margin-bottom: 20px;
+  margin-block-end: 20px;
 }
 
-.answers_to_questions_article{
+.answers_to_questions_article {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -331,11 +328,7 @@ a:focus-visible {
     column-gap: 10px;
   }
 
-  .what > .answers_to_questions {
+  .essence > .answers_to_questions {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .posters {
-    gap: 20px;
   }
 }
