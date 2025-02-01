@@ -135,8 +135,10 @@ a:focus-visible {
 
 .header_introduction {
   font-family: var(--font-family, sans-serif);
+  font-weight: var(--font-bold);
   font-size: 18px;
   line-height: 130%;
+  color: var(--text-color-paragraph);
 }
 
 .main {
@@ -173,6 +175,16 @@ a:focus-visible {
   font-family: var(--font-family, sans-serif);
   font-size: 18px;
   line-height: 130%;
+  font-weight: var(--font-bold);
+  color: var(--text-color-paragraph);
+}
+
+.answers_to_questions_title_title {
+  font-family: var(--font-family, sans-serif);
+  font-size: 18px;
+  line-height: 130%;
+  font-weight: var(--font-regular);
+  color: var(--text-color-paragraph);
 }
 
 .answer_card_text {
@@ -193,6 +205,8 @@ a:focus-visible {
   font-family: var(--font-family, sans-serif);
   font-size: 18px;
   line-height: 130%;
+  font-weight: var(--font-bold);
+  color: var(--text-color-paragraph);
 }
 
 .image_title_item {
